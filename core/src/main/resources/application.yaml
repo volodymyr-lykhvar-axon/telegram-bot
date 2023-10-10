@@ -1,0 +1,54 @@
+# DB Configuration
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/telegram?currentSchema=${spring.jpa.properties.hibernate.default_schema}
+    username: postgres
+    password: changeme
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        default_schema: telegram
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    open-in-view: false
+  main:
+    allow-circular-references: true
+    allow-bean-definition-overriding: true
+  profiles:
+    active: local
+  output:
+    ansi:
+      enabled: always
+
+# Server Configuration
+server:
+  port: 8080
+  servlet:
+    context-path: /telegram
+
+telegram:
+
+  feign-timeout-millis:
+    connect: 60000
+    read: 30000
+
+  settings:
+    max-users: 5
+    price-scheduler-delay: 100
+    notification-percent: 10
+    bot-token: 6332648111:AAHxVG-PXn2QENgga_yK5ODP6GnLmeH94Jg
+    bot-name: lykhvar_test_bot
+# Log Configuration
+logging-level: DEBUG
+logging:
+  level:
+    com:
+      telegram: ${logging-level}
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){cyan} %highlight(${LOG_LEVEL_PATTERN:-%6p}) %clr(:){faint} %green(%X{requestId}) %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"
