@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="Volodymyr Lykhvar" id="1">
+        <createTable tableName="currency">
+            <column name="currency_id" type="${type.string}">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="price" type="${type.big_decimal}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated_at" type="${type.timestamp}" />
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
