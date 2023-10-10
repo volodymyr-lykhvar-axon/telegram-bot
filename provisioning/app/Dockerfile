@@ -18,7 +18,7 @@ MAINTAINER <vlykhvar.axon>
 RUN mkdir /app
 WORKDIR /app
 
-COPY --from=maven /app/api/target/telegram.jar /app/telegram.jar
+COPY --from=maven /app/core/target/telegram.jar /app/telegram.jar
 
 # Entrypoint directive
 ENTRYPOINT java -jar "-Dspring.datasource.url=jdbc:postgresql://$DB_HOST:$DB_PORT/$DB_NAME?currentSchema=$DB_SCHEMA" \
@@ -29,5 +29,6 @@ ENTRYPOINT java -jar "-Dspring.datasource.url=jdbc:postgresql://$DB_HOST:$DB_POR
                      "-Dtelegram.settings.max-users=$MAX_USERS" \
                      "-Dtelegram.settings.price-scheduler-delay=$PRICE_SCHEDULER_DELAY" \
                      "-Dtelegram.settings.notification-percent=$NOTIFICATION_PERCENT" \
-                     "-Dtelegram.settings.token=$TOKEN" \
+                     "-Dtelegram.settings.bot-token=$BOT_TOKEN" \
+                     "-Dtelegram.settings.bot-name=$BOT_NAME" \
                      /app/telegram.jar

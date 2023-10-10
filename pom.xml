@@ -196,7 +196,7 @@
                     </executions>
                     <configuration>
                         <finalName>telegram</finalName>
-                        <mainClass>config.com.telegram.core.Application</mainClass>
+                        <mainClass>com.telegram.core.config.Application</mainClass>
                     </configuration>
                 </plugin>
 

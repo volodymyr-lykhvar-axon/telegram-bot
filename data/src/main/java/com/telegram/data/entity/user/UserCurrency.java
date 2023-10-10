@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.math.BigDecimal;
@@ -34,6 +35,7 @@ public class UserCurrency extends CreatedDateAuditedEntity {
     private String userId;
 
     @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "currency_id", referencedColumnName = "currency_id")
     private Currency currency;
 
     @Column(name = "last_price", nullable = false)
