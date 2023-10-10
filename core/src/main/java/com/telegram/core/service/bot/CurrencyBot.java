@@ -4,7 +4,6 @@ import com.telegram.common.config.ConfigurationManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
@@ -35,7 +34,7 @@ public class CurrencyBot extends TelegramLongPollingBot {
                     "user_currency table and return the current price for selected currencies");
             execute(massage);
         } catch (TelegramApiException e) {
-           LOG.error("Can't send message to chat, reason: {}", e.getMessage());
+            LOG.error("Can't send message to chat, reason: {}", e.getMessage());
         }
     }
 
