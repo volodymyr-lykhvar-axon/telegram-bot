@@ -35,7 +35,7 @@ public class ConfigurationManager {
      *
      * @author Volodymyr Lykhvar
      */
-    private static class FeignTimeoutMillis {
+    public static class FeignTimeoutMillis {
 
         @NotNull
         @PositiveOrZero
@@ -67,7 +67,7 @@ public class ConfigurationManager {
      *
      * @author Volodymyr Lykhvar
      */
-    private static class Settings {
+    public static class Settings {
 
         @NotNull
         @PositiveOrZero
