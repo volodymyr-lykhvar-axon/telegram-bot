@@ -23,6 +23,7 @@ public class Currency {
     @Column(nullable = false)
     private BigDecimal price;
 
+    @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
     public String getId() {

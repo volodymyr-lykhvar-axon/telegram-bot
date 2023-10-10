@@ -1,4 +1,4 @@
-package com.telegram.api.config;
+package com.telegram.core.config;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -8,9 +8,9 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.databind.json.JsonMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.telegram.api.deserializer.LocalDateTimeDeserializer;
-import com.telegram.api.deserializer.StringTrimDeserializer;
-import com.telegram.api.serializer.LocalDateTimeSerializer;
+import com.telegram.core.deserializer.LocalDateTimeDeserializer;
+import com.telegram.core.deserializer.StringTrimDeserializer;
+import com.telegram.core.serializer.LocalDateTimeSerializer;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;

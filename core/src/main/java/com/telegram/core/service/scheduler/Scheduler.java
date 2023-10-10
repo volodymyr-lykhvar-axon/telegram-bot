@@ -1,6 +1,6 @@
-package com.telegram.api.service.scheduler;
+package com.telegram.core.service.scheduler;
 
-import com.telegram.api.service.currency.CurrencyService;
+import com.telegram.core.service.currency.CurrencyService;
 import com.telegram.integration.exception.FeignErrorException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

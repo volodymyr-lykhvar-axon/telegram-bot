@@ -83,7 +83,11 @@ public class ConfigurationManager {
 
         @NotNull
         @NotEmpty
-        private String token;
+        private String botToken;
+
+        @NotNull
+        @NotEmpty
+        private String botName;
 
         public Long getMaxUsers() {
             return maxUsers;
@@ -109,12 +113,20 @@ public class ConfigurationManager {
             this.priceSchedulerDelay = priceSchedulerDelay;
         }
 
-        public String getToken() {
-            return token;
+        public String getBotName() {
+            return botName;
         }
 
-        public void setToken(String token) {
-            this.token = token;
+        public void setBotName(String botName) {
+            this.botName = botName;
+        }
+
+        public String getBotToken() {
+            return botToken;
+        }
+
+        public void setBotToken(String botToken) {
+            this.botToken = botToken;
         }
     }
 

@@ -1,4 +1,4 @@
-package com.telegram.api.converter;
+package com.telegram.core.converter;
 
 import com.telegram.data.entity.currency.Currency;
 import com.telegram.integration.model.CurrencyPriceResponse;

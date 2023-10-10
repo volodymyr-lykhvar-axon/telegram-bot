@@ -1,9 +1,9 @@
-package com.telegram.api.service.currency;
+package com.telegram.core.service.currency;
 
 import com.telegram.data.repository.currency.CurrencyRepository;
 import com.telegram.integration.client.CurrencyClient;
 import com.telegram.integration.exception.FeignErrorException;
-import com.telegram.api.converter.CurrencyConverter;
+import com.telegram.core.converter.CurrencyConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

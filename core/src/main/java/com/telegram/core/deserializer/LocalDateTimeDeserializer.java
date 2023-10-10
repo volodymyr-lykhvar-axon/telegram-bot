@@ -1,4 +1,4 @@
-package com.telegram.api.deserializer;
+package com.telegram.core.deserializer;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;

@@ -1,4 +1,4 @@
-package com.telegram.api.serializer;
+package com.telegram.core.serializer;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;

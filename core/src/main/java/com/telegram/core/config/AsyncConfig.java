@@ -1,4 +1,4 @@
-package com.telegram.api.config;
+package com.telegram.core.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

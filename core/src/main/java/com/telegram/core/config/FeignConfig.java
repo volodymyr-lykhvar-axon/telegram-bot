@@ -1,4 +1,4 @@
-package com.telegram.api.config;
+package com.telegram.core.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.telegram.common.config.ConfigurationManager;

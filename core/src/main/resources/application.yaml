@@ -42,8 +42,8 @@ telegram:
     max-users: 5
     price-scheduler-delay: 100
     notification-percent: 10
-    token: 6332648111:AAHxVG-PXn2QENgga_yK5ODP6GnLmeH94Jg
-
+    bot-token: 6332648111:AAHxVG-PXn2QENgga_yK5ODP6GnLmeH94Jg
+    bot-name: lykhvar_test_bot
 # Log Configuration
 logging-level: DEBUG
 logging:

@@ -1,4 +1,4 @@
-package com.telegram.api.config;
+package com.telegram.core.config;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
